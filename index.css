@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.animation-div{
+    background-color: #593c74;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: white;
+    font-family: sans-serif;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition: all .3s ease-out;
+}
+
+@keyframes example {
+    0%{
+        transform: translateX(0px);
+        background-color: #3c6974;
+    }
+    50%{
+        transform: translateX(500px);
+        background-color: #4c2055;
+        width: 400px;
+        height: 400px;
+    }
+    100%{
+        transform: translateX(0px);
+        background-color: #73743c;
+        width: 300px;
+        height: 300px;
+    }
+}
